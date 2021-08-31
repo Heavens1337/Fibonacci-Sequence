@@ -9,8 +9,8 @@ preceding_number_one = 1
 preceding_number_two = 2
 
 
-print("Current number: 1")
-print("Current number: 2")
+print("Current number:  1")
+print("Current number:  2")
 
 while current_number < int(limit):
     current_number = preceding_number_one + preceding_number_two
