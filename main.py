@@ -12,11 +12,12 @@ preceding_number_two = 2
 print("Current number: 1")
 print("Current number: 2")
 
-while current_number <= int(limit):
+while current_number < int(limit):
     current_number = preceding_number_one + preceding_number_two
     preceding_number_one = preceding_number_two
     preceding_number_two = current_number
-    print(current_number)
+    if int(current_number) < int(limit):
+        print("Current number: ", current_number)
 
 print("The numbers have reached the point where if the program were to continue, it would "
       "\ngo over your defined limit.")
